@@ -6,7 +6,7 @@ function updateCountdown() {
 
     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
 
-    let footerText = "The final hour."
+    let footerText = "Doomsday has begun."
 /*
     if (days === 4) {
         footerText = "Doomsday is getting closer.";
@@ -20,9 +20,9 @@ function updateCountdown() {
         footerText = "Doomsday is upon us.";
     }
 */
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    const hours = 0//Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = 0//Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = 0//Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
     const formattedTime = `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     
