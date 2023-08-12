@@ -6,8 +6,8 @@ function updateCountdown() {
 
     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
 
-    let footerText = "The clock is ticking.."
-
+    let footerText = "The final hour."
+/*
     if (days === 4) {
         footerText = "Doomsday is getting closer.";
     } else if (days === 3) {
@@ -19,7 +19,7 @@ function updateCountdown() {
     } else if (days === 0) {
         footerText = "Doomsday is upon us.";
     }
-
+*/
     const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
