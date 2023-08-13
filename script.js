@@ -4,7 +4,7 @@ function updateCountdown() {
     const now = new Date().getTime();
     const timeRemaining = countdownDate - now;
 
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const days = 0//Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
 
     let footerText = "Doomsday has begun."
 /*
